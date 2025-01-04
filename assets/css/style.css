@@ -789,6 +789,8 @@ img {
 
 }
 
+
+
 .our-clients h2 {
   font-size: 2em;
   margin-bottom: 100px;
@@ -798,6 +800,16 @@ img {
   display: flex;
   justify-content: center;
   gap: 20px;
+}
+
+.client__title {
+  font-size: var(--h2-font-size);
+  margin-bottom: var(--mb-0-75);
+}
+
+.client__title,
+.client__description {
+  color: #fff;
 }
 
 .client-logo {
@@ -1129,6 +1141,7 @@ footer .footer__social a:hover {
   .portfolio__content,
   .project__container,
   .contact__container,
+  .our-clients__container,
   .footer__container {
     grid-template-columns: repeat(2, 1fr);
   }

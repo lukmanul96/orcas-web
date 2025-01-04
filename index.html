@@ -19,15 +19,15 @@
     <title>Orcas Software</title>
 
     <!--==================== Favicon ====================-->
-   
-<link rel="apple-touch-icon" sizes="57x57" href="assets/logo/apple-icon-57x57.png">
-<link rel="icon" type="image/png" sizes="32x32" href="assets/logo/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="96x96" href="assets/logo/favicon-96x96.png">
-<link rel="icon" type="image/png" sizes="16x16" href="assets/logo/favicon-16x16.png">
-<link rel="manifest" href="/manifest.json">
-<meta name="msapplication-TileColor" content="#ffffff">
-<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-<meta name="theme-color" content="#ffffff">
+    <link rel="shortcut icon" href="/assets/img/favicon_edited.png" type="image/png">
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/logo/apple-icon-57x57.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/logo/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/logo/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/logo/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 
     <!--==================== Animate on scroll CDN ====================-->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -192,7 +192,7 @@
                 <!--==================== SERVICES 1 ====================-->
                 <div class="services__content">
                     <div>
-                        <i class="uil uil-paint-tool services__icon"></i>
+                        <i class="uil uil-web-grid services__icon"></i>
                         <h3 class="services__title">UI/UX <br> Design</h3>
                     </div>
                 </div>
@@ -209,30 +209,17 @@
                 <div class="services__content">
                     <div>
                         <i class="uil uil-coding services__icon"></i>
-                        <h3 class="services__title">API Development <br> </h3>
+                        <h3 class="services__title">API Development<br> </h3>
                     </div>
                 </div>
                 <!---==================== SERVICES 4 ====================-->
                 <div class="services__content">
                     <div>
-                        <i class="uil uil-mobile-android services__icon"></i>
-                        <h3 class="services__title">Mobile App Development <br> </h3>
+                        <i class="uil uil-pen services__icon"></i>
+                        <h3 class="services__title">Mobile App <br> </h3>
                     </div>
                 </div>
-                <!---==================== SERVICES 5 ====================-->
-                <div class="services__content">
-                    <div>
-                     <i class="uil uil-chat-info services__icon"></i>
-                     <h3 class="services__title">Software Consultation <br> </h3>
-                    </div>
-                </div>
-                <!---==================== SERVICES 6 ====================-->
-                <div class="services__content">
-                    <div>
-                       <i class="uil uil-shield-check services__icon"></i>
-                       <h3 class="services__title">Web Security<br> </h3>
-                    </div>
-                </div>
+            </div>
         </section>
 
         <!--==================== PORTFOLIO ====================-->
@@ -267,11 +254,11 @@
                     </div>
                     <!--==================== PORTFOLIO 3 ====================-->
                     <div class="portfolio__content grid swiper-slide">
-                        <img src="assets/img/adminpanel.png" alt="" class="portfolio__img">
+                        <img src="assets/img/minimorie-web.png" alt="" class="portfolio__img">
 
                         <div class="portfolio__data">
-                            <h3 class="portfolio__title">Admin Panel Website</h3>
-                            <p class="portfolio__description">E-commerce website, dengan ciri login page, add to cart, dan checkout.</p>
+                            <h3 class="portfolio__title">Laundry and Item Rental Website</h3>
+                            <p class="portfolio__description">Sewaan peralatan website, dengan ciri login page, payment gateway, inventori dan checkout. Sesuai untuk telefon pintar</p>
                          
                         </div>
                     </div>
@@ -287,8 +274,8 @@
 
         <!--OUR CLIENT-->
 
-        <section class="our-clients">
-            <h2>Klien Orcas</h2>
+        <section class="portfolio section">
+            <h2 class="section__title">Klien Orcas</h2>
             <div class="client-logos">
                 <div class="client-logo">
                     <img src="assets/img/naksafe.png" alt="Client 1 Logo">
@@ -305,6 +292,11 @@
                 <div class="client-logo-black" alt="Ejoms">
                     <img src="assets/img/ejoms.png" class="" alt="Client 4 Logo">
                 </div>
+                <a href="https://minimorie.com.my" target="_blank">
+                    <div class="client-logo-black" alt="Ejoms">
+                        <img src="assets/img/minimorie.png" alt="Client 4 Logo">
+                    </div>
+                </a>
             </div>
         </section>
 
@@ -436,7 +428,7 @@
 
                
             </div>
-            <p class="footer__copy">&copy; 2024 Orcas Software | All Rights Reserved</p>
+            <p class="footer__copy">&copy; <span id="year"></span> Orcas Software | All Rights Reserved</p>
         </div>
     </footer>
 
@@ -452,6 +444,7 @@
     <!--==================== MAIN JS ====================-->
     <script src="assets/js/main.js"></script>
 
+
     <!--=================== Animated text ===============-->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script>
@@ -465,6 +458,10 @@
             loop: true,
         });
     </script>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+      </script>
 
     <!--=================== Animate scroll js ===============-->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
